@@ -1,12 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ProjectCard = ({ imgSrc, tags, title, projectLink, classes }) => {
+const ProjectCard = ({ imgSrc, tags, title, projectLink, classes, badge }) => {
   return (
     <div
       className={`relative rounded-2xl p-4 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 
         ring-inset ring-zinc-50/5 transition-colors ${classes}`}
     >
+      {badge && (
+        <span className="absolute px-3 py-1 bg-sky-400 rounded-md text-sm m-2 ">
+          {badge}
+        </span>
+      )}
+
       <figure className="img-box aspect-square rounded-lg mb-4">
         <img src={imgSrc} alt={title} loading="lazy" className="img-cover" />
       </figure>
