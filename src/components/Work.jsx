@@ -33,18 +33,6 @@ const Work = () => {
       tags: ["responsive", "bootstrap"],
       projectLink: "https://bootstrap-pro.vercel.app/",
     },
-    {
-      imgSrc: project1,
-      title: "eCommerce website",
-      tags: ["eCommerce", "Development"],
-      projectLink: "https://github.com/codewithsadee/anon-ecommerce-website",
-    },
-    {
-      imgSrc: project2,
-      title: "vCard Personal portfolio",
-      tags: ["Web-design", "Development"],
-      projectLink: "https://github.com/codewithsadee/vcard-personal-portfolio",
-    },
   ];
   return (
     <section className="section" id="work">
