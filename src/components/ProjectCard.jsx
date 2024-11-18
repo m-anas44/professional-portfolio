@@ -8,9 +8,14 @@ const ProjectCard = ({ imgSrc, tags, title, projectLink, classes, badge }) => {
         ring-inset ring-zinc-50/5 transition-colors ${classes}`}
     >
       {badge && (
-        <span className="absolute px-3 py-1 bg-sky-400 rounded-md text-sm m-2 ">
+        <div className="absolute bg-zinc-900 m-2 px-3 py-1 rounded flex items-center gap-1.5 text-sm tracking-wide">
+          {badge === "Upcoming" && (
+            <span className="relative w-2 h-2 rounded-full bg-emerald-400">
+              <span className="absolute rounded-full bg-emerald-400 inset-0 animate-ping"></span>
+            </span>
+          )}
           {badge}
-        </span>
+        </div>
       )}
 
       <figure className="img-box aspect-square rounded-lg mb-4">

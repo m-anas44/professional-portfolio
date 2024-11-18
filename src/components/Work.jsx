@@ -1,9 +1,11 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import project1 from "../assets/project1.png";
+import project1 from "../assets/youtube.png";
 import project2 from "../assets/ride.png";
 import project3 from "../assets/ecommerce.png";
 import project4 from "../assets/bootstrap.png";
+
+// https://fullstack-youtube-like-webapp.vercel.app/
 
 const Work = () => {
   const works = [
@@ -11,8 +13,8 @@ const Work = () => {
       imgSrc: project1,
       title: "Full Stack YouTube-like App",
       tags: ["react", "frontend", "backend", "resposive"],
-      projectLink: "https://fullstack-youtube-like-webapp.vercel.app/",
-      badge: "Pro",
+      projectLink: "",
+      badge: "Upcoming",
     },
     {
       imgSrc: project2,

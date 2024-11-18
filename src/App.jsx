@@ -10,6 +10,7 @@ import ReactLenis from "lenis/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import Certification from "./components/Certification";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 function App() {
   useGSAP(() => {
@@ -37,7 +38,8 @@ function App() {
         <About />
         <Skills />
         <Work />
-        <Review />
+        <Certification />
+        {/* <Review /> */}
         <Contact />
       </main>
       <Footer />
