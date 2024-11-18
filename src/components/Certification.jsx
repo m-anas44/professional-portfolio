@@ -4,7 +4,7 @@ import certificate2 from "../assets/freelancing.jpg";
 
 const Certification = () => {
   return (
-    <section className="section">
+    <section className="section" id="certificates">
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">Certifications</h2>
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(350px,_1fr))]">
