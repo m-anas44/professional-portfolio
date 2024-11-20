@@ -32,11 +32,11 @@ const Services = () => {
     <section className="section" id="services">
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">Our Services</h2>
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))]">
+        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(350px,_1fr))]">
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative rounded-2xl p-4 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 
+              className="rounded-2xl p-4 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 
         ring-inset ring-zinc-50/5 transition-colors reveal-up"
             >
               <img src={service.icon} alt={service.title} className="mb-3" />
