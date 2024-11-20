@@ -32,7 +32,7 @@ const Services = () => {
     <section className="section" id="services">
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">Our Services</h2>
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(350px,_1fr))]">
+        <div className="grid gap-x-4 gap-y-5 grid-cols-1 md:grid-cols-2">
           {services.map((service, index) => (
             <div
               key={index}
