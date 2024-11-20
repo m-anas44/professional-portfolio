@@ -11,6 +11,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Certification from "./components/Certification";
+import Services from "./components/Services";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 function App() {
   useGSAP(() => {
@@ -37,6 +38,7 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Services />
         <Work />
         <Certification />
         {/* <Review /> */}
