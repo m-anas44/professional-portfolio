@@ -1,6 +1,7 @@
 import React from "react";
 import heroImg from "../assets/hero-image.png";
 import heroSectionImg from "../assets/hero-img.png";
+import cv from "../assets/professional-cv.pdf";
 import { ButtonOutline, ButtonPrimary } from "./Button";
 const Hero = () => {
   return (
@@ -30,7 +31,9 @@ const Hero = () => {
             Building Scalable Modern Websites for the Future
           </h2>
           <div className="flex items-center gap-3">
-            <ButtonPrimary label="Download CV" icon="download" />{" "}
+            <a href={cv} download={"professional-cv"}>
+              <ButtonPrimary label="Download CV" icon="download" />{" "}
+            </a>
             <ButtonOutline
               href="#about"
               label="Scroll down"
