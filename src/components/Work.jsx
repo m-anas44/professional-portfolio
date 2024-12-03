@@ -1,38 +1,46 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import project1 from "../assets/youtube.png";
+import project1 from "../assets/videotube.png";
 import project2 from "../assets/ride.png";
 import project3 from "../assets/ecommerce.png";
 import project4 from "../assets/bootstrap.png";
+import project5 from "../assets/shopr.png";
 
 // https://fullstack-youtube-like-webapp.vercel.app/
 
 const Work = () => {
   const works = [
     {
-      imgSrc: project1,
-      title: "Full Stack YouTube-like App",
-      tags: ["react", "frontend", "backend", "resposive"],
+      imgSrc: project5,
+      title: "Ecommerce Shopr App",
+      tags: ["nextjs", "tailwind", "sanity", "clerk"],
       projectLink: "",
       badge: "Upcoming",
     },
     {
+      imgSrc: project1,
+      title: "Full Stack YouTube-like App",
+      tags: ["react", "tailwind", "mongodb", "express"],
+      projectLink: "https://fullstack-youtube-like-webapp.vercel.app/",
+      badge: "Pro",
+    },
+    {
       imgSrc: project2,
       title: "RideRentals",
-      tags: ["react", "frontend", "resposive"],
+      tags: ["react", "tailwind", "mongodb", "express"],
       projectLink: "https://ride-rentals.vercel.app/",
       badge: "Pro",
     },
     {
       imgSrc: project3,
       title: "Ecommerce Web Design",
-      tags: ["nextjs", "ecommerce", "frontend"],
+      tags: ["nextjs", "tailwind"],
       projectLink: "https://muhammad-anas-ui.vercel.app/",
     },
     {
       imgSrc: project4,
       title: "Responsive Design",
-      tags: ["responsive", "bootstrap"],
+      tags: ["html", "css", "bootstrap"],
       projectLink: "https://bootstrap-pro.vercel.app/",
     },
   ];
