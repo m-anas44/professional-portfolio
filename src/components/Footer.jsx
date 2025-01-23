@@ -37,7 +37,7 @@ const Footer = () => {
     },
     {
       label: "Facebook",
-      href: "https://www.facebook.com/hyProfessor",
+      href: "https://www.facebook.com/muhammad.anas.25437",
     },
   ];
   return (
