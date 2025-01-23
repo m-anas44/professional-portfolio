@@ -6,16 +6,14 @@ import project3 from "../assets/ecommerce.png";
 import project4 from "../assets/bootstrap.png";
 import project5 from "../assets/shopr.png";
 
-// https://fullstack-youtube-like-webapp.vercel.app/
-
 const Work = () => {
   const works = [
     {
       imgSrc: project5,
       title: "Ecommerce Shopr App",
-      tags: ["nextjs", "tailwind", "sanity", "clerk"],
-      projectLink: "",
-      badge: "Upcoming",
+      tags: ["nextjs", "tailwind", "sanity", "clerk", "stripe"],
+      projectLink: "https://professional-portfolio-gray.vercel.app/",
+      badge: "Pro",
     },
     {
       imgSrc: project1,

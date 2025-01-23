@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your EmailJS Service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_KEY, // Replace with your EmailJS Template ID
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Replace with your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          formRef.current.reset(); // Optional: Reset the form after successful submission
+        },
+        (error) => {
+          alert("Failed to send message, please try again.");
+          console.error("Error:", error);
+        }
+      );
+  };
+
   const socialLinks = [
     {
       href: "https://github.com/m-anas44",
@@ -74,9 +99,10 @@ const Contact = () => {
                 href={href}
                 key={key}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg 
-                transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-900 active:bg-zinc-50/80
-                reveal-up"
+              transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-900 active:bg-zinc-50/80
+              reveal-up"
               >
                 {icon}
               </a>
@@ -85,8 +111,8 @@ const Contact = () => {
         </div>
 
         <form
-          action="https://getform.io/f/agddlnxb"
-          method="POST"
+          ref={formRef}
+          onSubmit={handleSubmit}
           className="xl:pl-10 2xl:pl-20"
         >
           <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
@@ -128,6 +154,7 @@ const Contact = () => {
               id="message"
               placeholder="Hi!"
               className="text-field resize-y min-h-32 max-h-80 reveal-up"
+              required
             ></textarea>
           </div>
           <button
