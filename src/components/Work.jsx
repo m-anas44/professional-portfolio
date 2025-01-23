@@ -12,7 +12,7 @@ const Work = () => {
       imgSrc: project5,
       title: "Ecommerce Shopr App",
       tags: ["nextjs", "tailwind", "sanity", "clerk", "stripe"],
-      projectLink: "https://professional-portfolio-gray.vercel.app/",
+      projectLink: "https://ecommerce-webapp-nine.vercel.app/",
       badge: "Pro",
     },
     {

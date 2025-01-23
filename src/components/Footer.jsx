@@ -51,7 +51,7 @@ const Footer = () => {
             <ButtonPrimary
               label="Start Project"
               icon="chevron_right"
-              href="mailto:manasansari1438@gmail.com"
+              href="mailto:itsanas0322@gmail.com"
               classes="reveal-up"
             />
           </div>
